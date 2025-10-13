@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "CPC 油價整合",
+        "description": "按下「提交」即可安裝整合，不需要任何設定。"
+      }
+    },
+    "abort": {
+      "already_configured": "此整合已經安裝。"
+    }
+  }
+}
