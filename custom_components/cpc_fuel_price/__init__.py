@@ -10,6 +10,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Set up CPC Fuel Price from a config entry."""
+    # 轉 forward 到 sensor 平台
     await hass.config_entries.async_forward_entry_setups(entry, ["sensor"])
     return True
 
