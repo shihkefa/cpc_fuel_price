@@ -7,5 +7,6 @@
   "codeowners": ["@shihkefa"],
   "iot_class": "cloud_polling",
   "integration_type": "service",
-  "config_flow": false
+  "config_flow": true
 }
+
