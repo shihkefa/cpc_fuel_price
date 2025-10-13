@@ -1,0 +1,10 @@
+{
+  "name": "cpc_fuel_price",
+  "domain": "CPC Fuel Price",
+  "country": "worldwide",
+  "homeassistant": "2023.1.0",
+  "render_readme": true,
+  "zip_release": false,
+  "filename": "custom_components/cpc_fuel_price",
+  "source": "https://github.com/shihkefa/cpc_fuel_price"
+}
