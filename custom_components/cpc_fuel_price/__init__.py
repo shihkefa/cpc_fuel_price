@@ -1,11 +1,21 @@
-from __future__ import annotations
+"""CPC Fuel Price Integration"""
+from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 
-from .const import DOMAIN
+DOMAIN = "cpc_fuel_price"
 
 async def async_setup(hass: HomeAssistant, config: dict):
-    """YAML不需設定，直接啟用整合。"""
+    """YAML setup not used."""
+    return True
+
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
+    """Set up CPC Fuel Price from a config entry."""
     hass.async_create_task(
-        hass.helpers.discovery.async_load_platform("sensor", DOMAIN, {}, config)
+        hass.config_entries.async_forward_entry_setup(entry, "sensor")
     )
     return True
+
+async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry):
+    """Unload CPC Fuel Price entry."""
+    return await hass.config_entries.async_forward_entry_unload(entry, "sensor")
+
