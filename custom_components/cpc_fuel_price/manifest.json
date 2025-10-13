@@ -1,0 +1,11 @@
+{
+  "domain": "cpc_fuel_price",
+  "name": "CPC Fuel Price",
+  "version": "1.0.0",
+  "documentation": "https://github.com/shihkefa",
+  "requirements": [],
+  "codeowners": ["@shihkefa"],
+  "iot_class": "cloud_polling",
+  "integration_type": "service",
+  "config_flow": false
+}
