@@ -74,8 +74,9 @@ class CPCSensor(CoordinatorEntity, SensorEntity):
             "型別名稱": p.get("型別名稱"),
             "產品編號": p.get("產品編號"),
             "產品名稱": p.get("產品名稱"),
-            "參考牌價": p.get("參考牌價"),
+            "參考牌價": p.get("參考牌價_金額"),
             "牌價生效日期": p.get("牌價生效日期"),
             "包裝": p.get("包裝"),
             "計價單位": p.get("計價單位"),
         }
+
